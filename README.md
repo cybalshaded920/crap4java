@@ -19,7 +19,7 @@ For each invocation:
 1. Delete stale coverage artifacts:
    - `target/site/jacoco/`
    - `target/jacoco.exec`
-2. Run `mvn -q test jacoco:report`
+2. Run `mvn -q org.jacoco:jacoco-maven-plugin:0.8.12:prepare-agent test org.jacoco:jacoco-maven-plugin:0.8.12:report`
 3. Read `target/site/jacoco/jacoco.xml`
 4. Analyze selected Java files
 
